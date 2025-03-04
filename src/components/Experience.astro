@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "2023",
+    title: "TechnoMarket",
+    company: "Proyecto Estudiantil",
+    description:
+      "Sistema de gestión para una empresa de productos tecnológicos. Desarrollé el backend y frontend, integrando funcionalidades para la administración eficiente de inventarios, ventas y clientes.",
+  },
+  {
+    date: "2024",
+    title: "GoStay",
+    company: "Proyecto Estudiantil",
+    description:
+      "Aplicación móvil para la gestión de hospedajes. Implementé una interfaz intuitiva y un backend robusto para facilitar reservas y administración de alojamientos.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
